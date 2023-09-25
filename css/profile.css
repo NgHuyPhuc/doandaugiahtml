@@ -1,0 +1,54 @@
+.pro-detail-tab {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.pro-detail-tab .active {
+    color: #fe3407 !important;
+    font-weight: 700;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+}
+
+.pro-detail-tab .active:hover {
+    color: black !important;
+    font-weight: 700;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+}
+
+.pro-detail-tab .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.form-group {
+    margin-bottom: 2em;
+}
+
+.btn-success{
+    border: none !important;
+}
+.button-effect {
+    background: linear-gradient(to right, rgb(255, 101, 106), rgb(255, 101, 106)) no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 0.5s;
+}
+
+.button-effect:hover {
+    background-size: 100% 100%;
+    border: none;
+}
+.button-pd{
+    padding-left: 5%;
+    padding-right: 5%;
+
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="local-time">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-sm-12 my-location">
+                        <p id="location" class="p-location">location</p>
+                        <p id="hvn" class="local-time">time time</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 d-my-sm-none no-padding-lg">
+                        <!-- <div class="content">
+                            <a href="">Đăng nhập</a>
+                            <a href="">Đăng ký</a>
+                        </div> -->
+                        <div class="content">
+                            <a class="a-text-decoration-show" href="">NguyenHuyPhuc</a>
+                            <a href="">Thoát</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
+        <div class="container mg-top-btm-30">
+            <div class="row">
+                <div class="col-lg-2 col-md-3">
+                    <img class="logo-page" src="img/dang-ky-website-dau-gia-truc-tuyen-2.jpg" alt="">
+                </div>
+                <div class="col-lg-10 col-md-9">
+                    <div class="info-web">
+                        <h1 class="cpn-name">
+                            <strong> CÔNG TY ĐẤU GIÁ HỢP DANH SỐ 5 - QUỐC GIA</strong>
+                            <br>
+                            TỔ CHỨC THỰC HIỆN ĐẤU GIÁ TRỰC TUYẾN
+                            <strong>ĐẦU TIÊN</strong> TẠI VIỆT NAM
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="menu-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ul-style">
+                        <nav class="navbar bg-body-tertiary fixed-top reponsive-menu">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Trang chủ</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="offcanvas offcanvas-end style-sm" tabindex="-1" id="offcanvasNavbar"
+                                    aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Giới thiệu
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/about" class="">Lịch sử hình thành và phát triển</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a href="/about" class="">Danh sách đấu giá viên</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">
+                                                    Thông báo mời đấu giá
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link blinking" href="#">
+                                                    Phòng đấu giá
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Thủ tục sau đấu giá
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Kết quả đấu giá</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Hợp đồng mua bán tài sản</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Bàn giao tài sản</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Hỗ trợ giao hàng</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mt-30 nav-name" href="#">
+                                                    Nguyễn Huy Phúc
+                                                </a>
+                                            </li>
+                                            <li class="nav-item nav-logout mymt-5">
+                                                <a class="nav-link" href="#">
+                                                    Thoát
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mt-30">
+                                                <a class="nav-link" href="#">
+                                                    Đăng nhập
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </form> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <ul class="menu-ul">
+                            <li class=""><a href="">Trang chủ</a></li>
+                            <li class="">
+                                <a href="">Giới thiệu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about" class="">Lịch sử hình thành và phát triển</a></li>
+                                    <li><a href="/about" class="">Danh sách đấu giá viên</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">Thông báo mời đấu giá</a></li>
+                            <li class=""><a class="blinking" href="">Phòng đấu giá</a></li>
+                            <li class="">
+                                <a href="">Thủ tục sau đấu giá</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about" class="">Kết quả đấu giá</a></li>
+                                    <li><a href="/about" class="">Hợp đồng mua bán tài sản</a></li>
+                                    <li><a href="/about" class="">Bàn giao tài sản</a></li>
+                                    <li><a href="/about" class="">Hỗ trợ hợp đồng</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">Tin tức sự kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-50">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="pro-detail-tab nav-tabs">
+                    <div class="tab-item nav-link "><a href="">Thông tin</a></div>
+                    <div class="tab-item nav-link active"><a class="active" href="">Đổi mật khẩu</a></div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label for="form-name">Password mới</label><code>*</code>
+                                <input type="Password" name="password" class="form-control" id="form-name" placeholder="Password" value="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-name">Nhập lại Password mới</label><code>*</code>
+                                <input type="Password" name="repassword" class="form-control" id="form-name" placeholder="Password" value="Password" required>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="button" class="btn  btn-success button-effect button-pd">Cập nhật</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-area fix">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-5 col-md-5 col-xs-12">
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <h4>CÔNG TY ĐẤU GIÁ HỢP DANH SỐ 5 - QUỐC GIA</h4>
+                                <p style="margin-bottom: 0px;">
+                                    Giấy phép đăng ký hoạt động số: 45/TP-DKHD do Sở Tư pháp thành phố Hà Nội cấp ngày
+                                    21/02/2019
+                                </p>
+                                <p style="margin-bottom: 0px;">Số điện thoại: (+84) 24 37622619</p>
+                                <p style="margin-bottom: 0px;">Email: daugiatructuyen.nalaf@gmail.com
+                                </p>
+                                <p style="margin-bottom: 0px;">Địa chỉ: Số 193 Hoàng Văn Thái, phường
+                                    Khương Trung, quận Thanh Xuân, thành phố Hà Nội, Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div class="footer-link">
+                            <h4 style="margin-bottom: 10px;">Chính sách</h4>
+                            <a href="/files/chinh_sach_hop_tac.pdf" target="_bank">Chính sách hợp tác</a>
+                            <a href="/files/quy_che_hoat_dong.pdf" target="_bank">Quy chế hoạt động website</a>
+                            <a href="/files/quy_trinh_khieu_nai.pdf" target="_bank">Quá trình giải quyết khiếu nại</a>
+                            <a href="/files/chinh_sach_bao_ve.pdf" target="_bank">Chính sách bảo vệ thông tin người
+                                dùng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-12">
+                        <div class="instagram-gellay">
+                            <a href="http://online.gov.vn/Home/WebDetails/67358" target="_blank">
+                                <img data-v-c6b87686="" src="/img/bocongthuong.b0f7be0.png" class="image-cert"
+                                    style="width: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Quyết định số 112/QĐ-STP của Sở Tư Pháp thành phố Hà Nội phê duyệt tổ chức đấu giá tài sản đủ điều kiện
+                thực hiện hình thức đấu giá trực tuyến ngày 12/05/2020</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="/js/script.js"></script>
+
+
+</body>
+
+</html>

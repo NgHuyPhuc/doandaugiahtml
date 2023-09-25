@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/detail.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="local-time">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-sm-12 my-location">
+                        <p id="location" class="p-location">location</p>
+                        <p id="hvn" class="local-time">time time</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 d-my-sm-none no-padding-lg">
+                        <div class="content">
+                            <a href="">Đăng nhập</a>
+                            <a href="">Đăng ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
+        <div class="container mg-top-btm-30">
+            <div class="row">
+                <div class="col-lg-2 col-md-3">
+                    <img class="logo-page" src="img/dang-ky-website-dau-gia-truc-tuyen-2.jpg" alt="">
+                </div>
+                <div class="col-lg-10 col-md-9">
+                    <div class="info-web">
+                        <h1 class="cpn-name">
+                            <strong> CÔNG TY ĐẤU GIÁ HỢP DANH SỐ 5 - QUỐC GIA</strong>
+                            <br>
+                            TỔ CHỨC THỰC HIỆN ĐẤU GIÁ TRỰC TUYẾN
+                            <strong>ĐẦU TIÊN</strong> TẠI VIỆT NAM
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="menu-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ul-style">
+                        <nav class="navbar bg-body-tertiary fixed-top reponsive-menu ">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Trang chủ</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="offcanvas offcanvas-end style-sm" tabindex="-1" id="offcanvasNavbar"
+                                    aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Giới thiệu
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/about" class="">Lịch sử hình thành và phát triển</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a href="/about" class="">Danh sách đấu giá viên</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">
+                                                    Thông báo mời đấu giá
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link blinking" href="#">
+                                                    Phòng đấu giá
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Thủ tục sau đấu giá
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Kết quả đấu giá</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Hợp đồng mua bán tài sản</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Bàn giao tài sản</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Hỗ trợ giao hàng</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mt-30 nav-name" href="#">
+                                                    Nguyễn Huy Phúc
+                                                </a>
+                                            </li>
+                                            <li class="nav-item nav-logout mymt-5">
+                                                <a class="nav-link" href="#">
+                                                    Thoát
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mt-30">
+                                                <a class="nav-link" href="#">
+                                                    Đăng nhập
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </form> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <ul class="menu-ul">
+                            <li class=""><a href="">Trang chủ</a></li>
+                            <li class="">
+                                <a href="">Giới thiệu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about" class="">Lịch sử hình thành và phát triển</a></li>
+                                    <li><a href="/about" class="">Danh sách đấu giá viên</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">Thông báo mời đấu giá</a></li>
+                            <li class=""><a class="blinking" href="">Phòng đấu giá</a></li>
+                            <li class="">
+                                <a href="">Thủ tục sau đấu giá</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about" class="">Kết quả đấu giá</a></li>
+                                    <li><a href="/about" class="">Hợp đồng mua bán tài sản</a></li>
+                                    <li><a href="/about" class="">Bàn giao tài sản</a></li>
+                                    <li><a href="/about" class="">Hỗ trợ hợp đồng</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">Tin tức sự kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trending-area">
+        <div class="container">
+            <div class="trending-main">
+                <div class="row">
+                    <div class="col-lg-3 d-my-sm-none">
+                        <div class="category-main mb-30">
+                            <div class="category-title">
+                                <h4>
+                                    <i class="fas fa-list-ul"></i>
+                                    Danh mục tài sản
+                                </h4>
+                            </div>
+                            <div class="category-list">
+                                <a href="#" class="category-item">
+                                    QUYỀN SỬ DỤNG ĐẤT ĐỂ GIAO ĐẤT HOẶC CHO THUÊ ĐẤT
+                                </a>
+                                <a href="#" class="category-item">
+                                    TÀI SẢN LÀ NỢ XẤU VÀ TÀI SẢN BẢO ĐẢM TẠI TỔ CHỨC TÍN DỤNG
+                                </a>
+                                <a href="#" class="category-item">
+                                    TÀI SẢN THI HÀNH ÁN
+                                </a>
+                                <a href="#" class="category-item">
+                                    TÀI SẢN LÀ TANG VẬT, PHƯƠNG TIỆN VI PHẠM HÀNH CHÍNH HOẶC TÀI SẢN KÊ BIÊN
+                                </a>
+                                <a href="#" class="category-item">
+                                    TÀI SẢN NHÀ NƯỚC
+                                </a>
+                                <a href="#" class="category-item">
+                                    CÁC LOẠI TÀI SẢN KHÁC
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/img/10_day_nui_dep_nhat_chau_au.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/22017.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="/img/236008.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 my-sm-style-support">
+                        <div class="support mb-30">
+                            <div class="support-title">
+                                <h4>HỖ TRỢ:</h4>
+                            </div>
+                            <div class="support-list">
+                                <a href="">
+                                    <i class="fas fa-headphones"></i>
+                                    Hotline: 0243.7622619
+                                </a>
+                                <a href="#">Email: daugiatructuyen.nalaf@gmail.com</a>
+                            </div>
+                            <div class="support-title">
+                                <h4>HƯỚNG DẪN:</h4>
+                            </div>
+                            <div class="support-list">
+                                <a href="https://daugiaviet.vn/files/huong_dan_su_dung.pdf" target="_blank">Hướng dẫn
+                                    tham gia đấu giá</a>
+                                <a href="https://daugiaviet.vn/files/nguoi_co_tai_san.pdf" target="_blank">Hướng dẫn
+                                    người có tài sản</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 pt-30">
+                <div id="nav-tab" role="tablist" class="nav nav-tabs">
+                    <a href="" class="nav-item nav-link active">CUỘC ĐẤU GIÁ NỔI BẬT</a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="d-flex">
+                        <p class="df-center text-search">Tìm kiếm:</p>
+                        <form action="" method="post">
+                            <div class="input-group">
+                                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                                    aria-describedby="search-addon" />
+                                <button type="button" class="btn btn-outline-primary">search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row pt-30">
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 pb-20">
+                        <div class="single-new">
+                            <div class="new-img">
+                                <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg" alt="">
+                            </div>
+                            <div class="new-cap">
+                                <h4><a href="#" class="ellipsis">Công ty Đấu giá Hợp danh Tân Đại Phát Thông báo Đấu
+                                        giá: Tài sản 2: Quyền cho thuê Tầng 4 + Tầng 5 Nhà A7. Diện tích: 552
+                                        m2/tầng. Thời gian thuê: 03 năm</a></h4>
+                            </div>
+                            <div class="what-info">
+                                <div class="icon"><img src="/img//daugia.svg" alt="" class="icon-bua"></div>
+                                <div class="text">
+                                    <span>Giá khởi điểm:
+                                        <strong>1.663.200.000 VNĐ</strong>
+                                    </span>
+                                    <span>Bước Giá:
+                                        <strong>18.000.000 VNĐ</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-pagination">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Trở lại</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">tiếp theo</a></li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="what-news pt-20 pb-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="nav-tab" role="tablist" class="nav nav-tabs">
+                        <a href="" class="nav-item nav-link active">KIẾN THỨC LUẬT PHÁP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div>
+                                <a target="_blank"
+                                    href="http://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=121748">- Luật đấu
+                                    giá
+                                    2016</a>
+                            </div>
+                            <div>
+                                <a target="_blank"
+                                    href="http://vbpl.vn/botuphap/Pages/vbpq-toanvan.aspx?ItemID=121741&amp;Keyword=8">-
+                                    Nghị định 62/2017/NĐ-CP</a>
+                            </div>
+                            <div>
+                                <a target="_blank"
+                                    href="http://vbpl.vn/botuphap/Pages/vbpq-toanvan.aspx?ItemID=122824&amp;Keyword=">-
+                                    Thông tư 06/2017/TT-BTP</a>
+                            </div>
+                            <div><a target="_blank"
+                                    href="http://vbpl.vn/botuphap/Pages/vbpq-toanvan.aspx?ItemID=17067&amp;Keyword=">-
+                                    Luật
+                                    giao địch điện tử</a>
+                            </div>
+                            <div><a target="_blank" href="http://vbpl.vn/TW/Pages/vbpq-toanvan.aspx?ItemID=15066">- Luật
+                                    công nghệ thông
+                                    tin</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div><a target="_blank"
+                                    href="http://vbpl.vn/botuphap/Pages/vbpq-van-ban-goc.aspx?ItemID=30470">- Nghị định
+                                    52/2013/NĐ-CP</a>
+                            </div>
+                            <div><a target="_blank" href="http://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=105747">-
+                                    Thông tư
+                                    59/2015/TT-BCT</a>
+                            </div>
+                            <div><a target="_blank"
+                                    href="http://vbpl.vn/bocongthuong/Pages/vbpq-van-ban-goc.aspx?ItemID=46686">- Thông
+                                    tư
+                                    12/2013/TT-BCT</a>
+                            </div>
+                            <div><a target="_blank" href="http://vbpl.vn/TW/Pages/vbpq-van-ban-goc.aspx?ItemID=44378">-
+                                    Thông tư
+                                    47/2014/TT-BCT</a>
+                            </div>
+                            <div><a target="_blank"
+                                    href="http://vbpl.vn/bocongthuong/Pages/vbpq-toanvan.aspx?ItemID=130669&amp;Keyword=">-
+                                    Thông tư 21/2018/TT-BCT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-area fix">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-5 col-md-5 col-xs-12">
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <h4>CÔNG TY ĐẤU GIÁ HỢP DANH SỐ 5 - QUỐC GIA</h4>
+                                <p style="margin-bottom: 0px;">
+                                    Giấy phép đăng ký hoạt động số: 45/TP-DKHD do Sở Tư pháp thành phố Hà Nội cấp ngày
+                                    21/02/2019
+                                </p>
+                                <p style="margin-bottom: 0px;">Số điện thoại: (+84) 24 37622619</p>
+                                <p style="margin-bottom: 0px;">Email: daugiatructuyen.nalaf@gmail.com
+                                </p>
+                                <p style="margin-bottom: 0px;">Địa chỉ: Số 193 Hoàng Văn Thái, phường
+                                    Khương Trung, quận Thanh Xuân, thành phố Hà Nội, Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div class="footer-link">
+                            <h4 style="margin-bottom: 10px;">Chính sách</h4>
+                            <a href="/files/chinh_sach_hop_tac.pdf" target="_bank">Chính sách hợp tác</a>
+                            <a href="/files/quy_che_hoat_dong.pdf" target="_bank">Quy chế hoạt động website</a>
+                            <a href="/files/quy_trinh_khieu_nai.pdf" target="_bank">Quá trình giải quyết khiếu nại</a>
+                            <a href="/files/chinh_sach_bao_ve.pdf" target="_bank">Chính sách bảo vệ thông tin người
+                                dùng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-12">
+                        <div class="instagram-gellay">
+                            <a href="http://online.gov.vn/Home/WebDetails/67358" target="_blank">
+                                <img data-v-c6b87686="" src="/img/bocongthuong.b0f7be0.png" class="image-cert"
+                                    style="width: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Quyết định số 112/QĐ-STP của Sở Tư Pháp thành phố Hà Nội phê duyệt tổ chức đấu giá tài sản đủ điều kiện
+                thực hiện hình thức đấu giá trực tuyến ngày 12/05/2020</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

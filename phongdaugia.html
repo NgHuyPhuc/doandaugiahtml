@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/detail.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="local-time">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-8 col-sm-12 my-location">
+                        <p id="location" class="p-location">location</p>
+                        <p id="hvn" class="local-time">time time</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 d-my-sm-none no-padding-lg">
+                        <div class="content">
+                            <a href="">Đăng nhập</a>
+                            <a href="">Đăng ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top">
+        <div class="container mg-top-btm-30">
+            <div class="row">
+                <div class="col-lg-2 col-md-3">
+                    <img class="logo-page" src="img/dang-ky-website-dau-gia-truc-tuyen-2.jpg" alt="">
+                </div>
+                <div class="col-lg-10 col-md-9">
+                    <div class="info-web">
+                        <h1 class="cpn-name">
+                            <strong> CÔNG TY ĐẤU GIÁ HỢP DANH SỐ 5 - QUỐC GIA</strong>
+                            <br>
+                            TỔ CHỨC THỰC HIỆN ĐẤU GIÁ TRỰC TUYẾN
+                            <strong>ĐẦU TIÊN</strong> TẠI VIỆT NAM
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="menu-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ul-style">
+                        <nav class="navbar bg-body-tertiary fixed-top reponsive-menu">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Trang chủ</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="offcanvas offcanvas-end style-sm" tabindex="-1" id="offcanvasNavbar"
+                                    aria-labelledby="offcanvasNavbarLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                                            </li>
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Giới thiệu
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/about" class="">Lịch sử hình thành và phát triển</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a href="/about" class="">Danh sách đấu giá viên</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">
+                                                    Thông báo mời đấu giá
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link blinking" href="#">
+                                                    Phòng đấu giá
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Thủ tục sau đấu giá
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Kết quả đấu giá</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Hợp đồng mua bán tài sản</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Bàn giao tài sản</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Hỗ trợ giao hàng</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link mt-30 nav-name" href="#">
+                                                    Nguyễn Huy Phúc
+                                                </a>
+                                            </li>
+                                            <li class="nav-item nav-logout mymt-5">
+                                                <a class="nav-link" href="#">
+                                                    Thoát
+                                                </a>
+                                            </li>
+                                            <li class="nav-item mt-30">
+                                                <a class="nav-link" href="#">
+                                                    Đăng nhập
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">
+                                                    Đăng ký
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- <form class="d-flex mt-3" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                  </form> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <ul class="menu-ul">
+                            <li class=""><a href="">Trang chủ</a></li>
+                            <li class="">
+                                <a href="">Giới thiệu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about" class="">Lịch sử hình thành và phát triển</a></li>
+                                    <li><a href="/about" class="">Danh sách đấu giá viên</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">Thông báo mời đấu giá</a></li>
+                            <li class=""><a class="blinking" href="">Phòng đấu giá</a></li>
+                            <li class="">
+                                <a href="">Thủ tục sau đấu giá</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/about" class="">Kết quả đấu giá</a></li>
+                                    <li><a href="/about" class="">Hợp đồng mua bán tài sản</a></li>
+                                    <li><a href="/about" class="">Bàn giao tài sản</a></li>
+                                    <li><a href="/about" class="">Hỗ trợ hợp đồng</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="">Tin tức sự kiện</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="what-news pt-50 pb-20">
+        <div class="container">
+            <div class="row pdg-border-h3">
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="title-dau-gia">
+                        <h3>Đấu giá 01 xe ô tô nhãn hiệu Kia Morning đã qua sử dụng. Biển kiểm soát: 19A-211.48</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-30">
+                <div class="col-lg-5">
+                    <img class="inpdg-img" src="/img/10_day_nui_dep_nhat_chau_au.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="detail-info">
+                            <div class="detail-row">
+                                <span>Tài sản đấu giá 01 xe ô tô nhãn hiệu Kia Morning đã qua sử dụng. Biển kiểm soát:
+                                    19A-211.48</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Đấu giá viên:</span>
+                                <span class="detail-value">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Nguyễn Huy Phúc
+                                    </button>
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Thông tin đấu giá
+                                                        viên: Nguyễn Huy Phúc</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 detail-dgv">
+                                                            <img src="/img/_league-of-legends-lol-wallpaper-full-hd- 88.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="col-lg-7">
+                                                            <div class="row">
+                                                                <div class="col-7"><span>Chứng chỉ hành nghề đấu giá
+                                                                        số:</span></div>
+                                                                <div class="col-5">
+                                                                    <span><strong>999/TP/ĐG-CCHN</strong></span>
+                                                                </div>
+                                                                <div class="col-7 pt-20"><span>Ngày cấp chứng chỉ hành
+                                                                        nghề:</span></div>
+                                                                <div class="col-5 pt-20">
+                                                                    <span><strong>18/02/2015</strong></span>
+                                                                </div>
+                                                                <div class="col-7 pt-20"><span>Số thẻ đấu giá
+                                                                        viên:</span></div>
+                                                                <div class="col-5 pt-20">
+                                                                    <span><strong>999/ĐGV</strong></span>
+                                                                </div>
+                                                                <div class="col-7 pt-20"><span>Ngày cấp thẻ đấu giá
+                                                                        viên:</span></div>
+                                                                <div class="col-5 pt-20">
+                                                                    <span><strong>10/01/2017</strong></span>
+                                                                </div>
+                                                                <div class="col-7 pt-20"><span>Nơi cấp thẻ đấu
+                                                                        giá:</span></div>
+                                                                <div class="col-5 pt-20"><span><strong>Sở Tư
+                                                                            Pháp</strong></span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Người có tài sản:</span>
+                                <span class="detail-value">Ngân hàng TMCP Việt Nam Thịnh Vượng (VP bank)</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Ngày công bố:</span>
+                                <span class="detail-value">28/08/2023</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Thời gian bắt đầu:</span>
+                                <span class="detail-value">08:00:00 28/08/2023</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Thời gian kết thúc dự kiến:</span>
+                                <span class="detail-value">17:00:00 12/09/2023</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Giá khởi điểm:</span> <!---->
+                                <span class="detail-value">300.000.000 VND</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Bước giá:</span>
+                                <span class="detail-value">3.000.000VNĐ</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Chi phí tham gia đấu giá:</span>
+                                <span class="detail-value">500.000 VNĐ</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label txt-main">Tiền đặt trước:</span>
+                                <span class="detail-value">134.800.000 VNĐ</span>
+                            </div>
+                            <div class="detail-row">
+                                <span>Giá cao nhất hiện tại: 303.000.000 VND</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-bar">
+                    <div class="row pb-20 pt-20">
+                        <div class="col-lg-6">
+                            <div class="timmer">
+                                Thời gian còn lại
+                                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Trả giá -->
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-xs-1 col-md-1 col-sm-1">
+                                        <a class="button-price-decrease" href="javascript:void(0)"
+                                            onclick="decreaseQuantity()">-</a>
+                                    </div>
+                                    <div class="col-xs-3 col-md-3 col-sm-3">
+                                        <input type="number" id="quantity" min="3000000" value="3000000" disabled>
+                                    </div>
+                                    <div class="col-xs-1 col-md-1 col-sm-1">
+                                        <a class="button-price-increase" href="javascript:void(0)"
+                                            onclick="increaseQuantity()">+</a>
+                                    </div>
+                                    <div class="col-xs-3 col-md-3 col-sm-1">
+                                        <button class="submit-price" type="submit">Trả giá</button>
+                                    </div>
+
+                                    <!-- <div class="col-xs-1">
+                                        <a class="button-price-decrease" href="javascript:void(0)" onclick="decreaseQuantity()">-</a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <input type="number" id="quantity" min="3000000" value="3000000" disabled>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <a class="button-price-increase" href="javascript:void(0)" onclick="increaseQuantity()">+</a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <button class="submit-price" type="submit">Trả giá</button>
+                                    </div> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="spinner-2s">
+                        <div id="spinner-container" class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Người đấu giá</th>
+                            <th scope="col">Giá trả</th>
+                            <th scope="col">Thời điểm trả giá</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>NHP</td>
+                            <td>4000000</td>
+                            <td>Thứ ba, 12-9-2023 | 02:03:51</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>3000000</td>
+                            <td>Thứ ba, 12-9-2023 | 02:03:57</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-area fix">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-5 col-md-5 col-xs-12">
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <h4>CÔNG TY ĐẤU GIÁ HỢP DANH SỐ 5 - QUỐC GIA</h4>
+                                <p style="margin-bottom: 0px;">
+                                    Giấy phép đăng ký hoạt động số: 45/TP-DKHD do Sở Tư pháp thành phố Hà Nội cấp ngày
+                                    21/02/2019
+                                </p>
+                                <p style="margin-bottom: 0px;">Số điện thoại: (+84) 24 37622619</p>
+                                <p style="margin-bottom: 0px;">Email: daugiatructuyen.nalaf@gmail.com
+                                </p>
+                                <p style="margin-bottom: 0px;">Địa chỉ: Số 193 Hoàng Văn Thái, phường
+                                    Khương Trung, quận Thanh Xuân, thành phố Hà Nội, Việt Nam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-xs-12">
+                        <div class="footer-link">
+                            <h4 style="margin-bottom: 10px;">Chính sách</h4>
+                            <a href="/files/chinh_sach_hop_tac.pdf" target="_bank">Chính sách hợp tác</a>
+                            <a href="/files/quy_che_hoat_dong.pdf" target="_bank">Quy chế hoạt động website</a>
+                            <a href="/files/quy_trinh_khieu_nai.pdf" target="_bank">Quá trình giải quyết khiếu nại</a>
+                            <a href="/files/chinh_sach_bao_ve.pdf" target="_bank">Chính sách bảo vệ thông tin người
+                                dùng</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-xs-12">
+                        <div class="instagram-gellay">
+                            <a href="http://online.gov.vn/Home/WebDetails/67358" target="_blank">
+                                <img data-v-c6b87686="" src="/img/bocongthuong.b0f7be0.png" class="image-cert"
+                                    style="width: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Quyết định số 112/QĐ-STP của Sở Tư Pháp thành phố Hà Nội phê duyệt tổ chức đấu giá tài sản đủ điều kiện
+                thực hiện hình thức đấu giá trực tuyến ngày 12/05/2020</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="/js/script.js"></script>
+
+    <script>
+        function decreaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentQuantity = parseInt(quantityInput.value);
+
+            if (currentQuantity > 3000000) {
+                quantityInput.value = currentQuantity - 300000;
+            }
+        }
+
+        function increaseQuantity() {
+            var quantityInput = document.getElementById('quantity');
+            var currentQuantity = parseInt(quantityInput.value);
+
+            quantityInput.value = currentQuantity + 300000;
+        }
+    </script>
+    <script>
+        function startCountdown(hours, minutes, seconds) {
+            var hoursElement = document.getElementById("hours");
+            var minutesElement = document.getElementById("minutes");
+            var secondsElement = document.getElementById("seconds");
+
+            var totalSeconds = hours * 3600 + minutes * 60 + seconds;
+
+            var countdown = setInterval(function () {
+                if (totalSeconds <= 0) {
+                    clearInterval(countdown);
+                    return;
+                }
+
+                totalSeconds--;
+
+                var remainingHours = Math.floor(totalSeconds / 3600);
+                var remainingMinutes = Math.floor((totalSeconds % 3600) / 60);
+                var remainingSeconds = totalSeconds % 60;
+
+                hoursElement.textContent = (remainingHours < 10 ? "0" : "") + remainingHours;
+                minutesElement.textContent = (remainingMinutes < 10 ? "0" : "") + remainingMinutes;
+                secondsElement.textContent = (remainingSeconds < 10 ? "0" : "") + remainingSeconds;
+            }, 1000);
+        }
+
+        // Ví dụ: Bắt đầu đếm ngược từ 1 giờ, 30 phút và 0 giây
+        startCountdown(0, 30, 0);
+
+        $(document).ready(function () {
+            // Hiển thị spinner khi trang được tải
+            $('#spinner-container').show();
+
+            // Ẩn spinner sau 2 giây
+            setTimeout(function () {
+                $('#spinner-2s').hide();
+            }, 2000);
+        });
+    </script>
+
+</body>
+
+</html>
