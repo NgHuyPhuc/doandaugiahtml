@@ -323,7 +323,10 @@
                                             onclick="decreaseQuantity()">-</a>
                                     </div>
                                     <div class="col-xs-3 col-md-3 col-sm-3">
-                                        <input type="number" id="quantity" min="3000000" value="3000000" disabled>
+                                        <input type="text" id="quantity-text" value="3.000.000" disabled>
+                                    </div>
+                                    <div class="col-xs-3 col-md-3 col-sm-3">
+                                        <input type="hidden" id="quantity" min="3000000" value="3000000" disabled>
                                     </div>
                                     <div class="col-xs-1 col-md-1 col-sm-1">
                                         <a class="button-price-increase" href="javascript:void(0)"
@@ -447,18 +450,25 @@
     <script>
         function decreaseQuantity() {
             var quantityInput = document.getElementById('quantity');
+            var quantityText = document.getElementById('quantity-text');
             var currentQuantity = parseInt(quantityInput.value);
+            // var currentText = quantityText.value;
 
             if (currentQuantity > 3000000) {
                 quantityInput.value = currentQuantity - 300000;
+                quantityText.value = new Intl.NumberFormat().format(currentQuantity);
             }
+            
         }
 
         function increaseQuantity() {
             var quantityInput = document.getElementById('quantity');
             var currentQuantity = parseInt(quantityInput.value);
+            var quantityText = document.getElementById('quantity-text');
 
             quantityInput.value = currentQuantity + 300000;
+            quantityText.value = new Intl.NumberFormat().format(currentQuantity);
+
         }
     </script>
     <script>
